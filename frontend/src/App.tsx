@@ -1,10 +1,16 @@
-import NotificationButton from "./components/buttons/NotificationButton/notificationButton";
+import NotificationButton from "./components/Buttons/NotificationButton/notificationButton";
+import Header from "./components/Header/Header";
+import SalesCard from "./components/cards/SalesCard/SalesCard";
 
 function App() {
   return (
     <>
-      <h1>Olá mundo! De uma maneira que você nunca viu!</h1>
-      <NotificationButton />
+      <Header />
+      <main className="dsmeta-container">
+        <section id="sales">
+          <SalesCard />
+        </section>
+      </main>
     </>
   );
 }
