@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./SalesCard.css";
 import NotificationButton from "../../Buttons/NotificationButton/notificationButton";
 import DatePicker from "react-datepicker";
@@ -10,6 +10,11 @@ export default function SalesCard() {
 
   const [minDate, setMinDate] = useState(min);
   const [maxDate, setMaxDate] = useState(max);
+
+  useEffect(() => {
+    console.log('Teste');
+  }, [])
+  
 
   return (
     <div className="dsmeta-card">
