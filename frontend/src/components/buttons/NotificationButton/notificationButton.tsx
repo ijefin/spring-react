@@ -3,14 +3,16 @@ import React, { useEffect } from "react";
 import icon from "../../../assets/notification-icon.svg";
 import { BASE_URL } from "../../../utils/request";
 import "./notificationButton.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type Props = {
   saleId: number;
 };
 
 const handleClick = (id: number) => {
-  axios(`${BASE_URL}/allSales/${id}/notification`).then((response) => {
-    console.log("Sucesso!");
+  axios(`${BASE_URL}/allSales/${id}/notification`).then(() => {
+    toast.success("Enviado com sucesso!");
   });
 };
 
