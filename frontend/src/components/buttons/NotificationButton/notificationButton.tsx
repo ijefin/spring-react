@@ -1,5 +1,4 @@
 import axios from "axios";
-import React, { useEffect } from "react";
 import icon from "../../../assets/notification-icon.svg";
 import { BASE_URL } from "../../../utils/request";
 import "./notificationButton.css";
