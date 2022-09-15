@@ -17,10 +17,14 @@ export default function SalesCard() {
   const [sales, setSales] = useState<Sale[]>([]);
 
   useEffect(() => {
+
+    const dmin = 
+
     axios.get(`${BASE_URL}/allSales`).then((response) => {
       setSales(response.data.content);
     });
   }, []);
+
 
   return (
     <div className="dsmeta-card">
