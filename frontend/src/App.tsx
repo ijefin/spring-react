@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import SalesCard from "../src/components/Cards/SalesCard/SalesCard";
+import SalesCard from "./components/Cards/SalesCard";
 import { ToastContainer } from "react-toastify";
 
 function App() {
