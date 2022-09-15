@@ -7,7 +7,7 @@ import axios from "axios";
 import { BASE_URL } from "../../../utils/request";
 import { Sale } from "../../../models/sale";
 
-export default function SalesCard() {
+function SalesCard() {
   const min = new Date(new Date().setDate(new Date().getDate() - 365));
   const max = new Date();
 
@@ -90,3 +90,5 @@ export default function SalesCard() {
     </div>
   );
 }
+
+export default SalesCard;
