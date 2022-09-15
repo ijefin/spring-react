@@ -74,7 +74,6 @@ export default function SalesCard() {
                       <div className="dsmeta-red-btn">
                         <NotificationButton />
                       </div>
-                      {/* <div></div> */}
                     </div>
                   </td>
                 </tr>
